@@ -1,0 +1,156 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============================== NAVBAR ============================== */
+.navbar {
+  background-color: #eb5757;
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  position: fixed;
+}
+
+.navbar .cart {
+  font-size: 1.4vw;
+  color: #fff;
+  font-weight: 700;
+  background-color: #000;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.navbar .menu-bar {
+  font-size: 1.5vw;
+  color: #fff;
+  font-size: 700;
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+/* ============================== Hero Section ============================== */
+.hero-container {
+  /* background-color: lightseagreen; */
+  width: 100vw;
+  height: auto;
+  top: 10vh;
+  position: absolute;
+}
+
+.hero-container .hero-img {
+  background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)), url('./images/background\ 1.jpg');
+  height: 90vh;
+  width: 100vw;
+  position: fixed;
+  background-size: auto;
+  background-position: center;
+}
+
+.content-container {
+  height: calc(100% - 10vh);
+  display: flex;
+  padding: 8vh 15vh;
+  box-sizing: border-box;
+}
+
+/* .left-container {
+  height: 100%;
+  width: 50%;
+  background-color: red;
+} */
+
+.left-container .content-heading {
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 3vh 10vh;
+  font-size: 12vh;
+  color: #fff;
+}
+
+.left-container .content-paragraph {
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0vh 10vh;
+  font-size: 3.5vh;
+  color: #fff;
+}
+
+.left-container .content-btn{
+  padding: 1vh 3vh;
+  margin: 8vh 13vh;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Acme", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2.5vh;
+}
+
+/* .right-container {
+  height: 100%;
+  width: 50%;
+  background-color: blue;
+
+} */
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 10vh;
+  }
+
+  .nav-link a {
+    display: none;
+  }
+
+  .navbar .cart {
+    font-weight: 700;
+    font-size: 5vw;
+    display: inline-block;
+    background-color: #000;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+
+  .navbar .menu-bar {
+    font-weight: 700;
+    font-size: 5vw;
+    display: inline-block;
+  }
+
+
+
+  .hero-container .hero-img {
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+  }
+
+}
